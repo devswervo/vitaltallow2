@@ -20,15 +20,17 @@
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">Vital Tallow</a>
-            <nav>
+            <nav class="hidden md:flex main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="product.html">Shop</a></li>
                     <li><a href="faq-benefits.html">FAQ & Benefits</a></li>
+                    <li><a href="cart.html">Cart</a></li>
                 </ul>
             </nav>
-            <div class="block md:hidden">
-                <nav>
+            <!-- mobile-only sidebar nav -->
+            <div class="md:hidden">
+                <button class="mobile-menu-btn">☰</button>
+                <nav class="secondary-nav">
                     <ul>
                         <li><a href="product.html">Shop</a></li>
                         <li><a href="faq-benefits.html">FAQ & Benefits</a></li>
@@ -38,9 +40,6 @@
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
                 </a>
-                <button class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
             </div>
         </div>
         <!-- Mobile Menu -->
