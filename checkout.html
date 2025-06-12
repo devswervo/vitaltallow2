@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Vital Tallow Natural Beef Tallow Lotion</title>
+    <meta name="description" content="Complete your purchase of our 100% natural beef tallow lotion products.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Vital Tallow</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="faq-benefits.html">FAQ & Benefits</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="faq-benefits.html">FAQ & Benefits</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Checkout Page -->
+    <section class="section checkout-page">
+        <div class="container">
+            <h1 class="text-center">Checkout</h1>
+            
+            <div class="checkout-container">
+                <div class="checkout-form fade-in">
+                    <h2>Shipping Information</h2>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name" class="form-label">First Name</label>
+                                <input type="text" id="first-name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name" class="form-label">Last Name</label>
+                                <input type="text" id="last-name" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address" class="form-label">Street Address</label>
+                            <input type="text" id="address" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address2" class="form-label">Apartment, Suite, etc. (optional)</label>
+                            <input type="text" id="address2" class="form-input">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" id="city" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state" class="form-label">State</label>
+                                <select id="state" class="form-input" required>
+                                    <option value="">Select State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <!-- Add all states here -->
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="zip" class="form-label">ZIP Code</label>
+                                <input type="text" id="zip" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <h2>Payment Information</h2>
+                        <div class="payment-methods">
+                            <div class="payment-method-tabs">
+                                <div class="payment-tab active" data-method="credit-card">
+                                    <i class="fas fa-credit-card"></i> Credit Card
+                                </div>
+                                <div class="payment-tab" data-method="paypal">
+                                    <i class="fab fa-paypal"></i> PayPal
+                                </div>
+                            </div>
+                            
+                            <div class="payment-method-content">
+                                <div class="payment-panel active" id="credit-card">
+                                    <!-- Credit Card Form -->
+                                    <div class="form-group">
+                                        <label for="card-number" class="form-label">Card Number</label>
+                                        <div id="card-number-element" class="form-input stripe-element"></div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="card-expiry" class="form-label">Expiration Date</label>
+                                            <div id="card-expiry-element" class="form-input stripe-element"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="card-cvc" class="form-label">CVC</label>
+                                            <div id="card-cvc-element" class="form-input stripe-element"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="payment-panel" id="paypal">
+                                    <!-- PayPal Button will be inserted here by JavaScript -->
+                                    <div id="paypal-button-container"></div>
+                                    <p class="text-center">You will be redirected to PayPal to complete your payment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" required>
+                                I agree to the <a href="terms.html">Terms and Conditions</a> and <a href="privacy.html">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <div id="card-errors" class="payment-error"></div>
+                        
+                        <button type="submit" id="submit-button" class="button checkout-btn">
+                            Complete Order
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="order-summary cart-summary fade-in">
+                    <h3>Order Summary</h3>
+                    <div class="order-items">
+                        <!-- Order items will be dynamically populated by JavaScript -->
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span class="summary-subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span class="summary-shipping">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax:</span>
+                        <span class="summary-tax">$0.00</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Total:</span>
+                        <span class="summary-total-value">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+         <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">Vital Tallow</div>
+                <p>100% natural beef tallow lotion for healthy, nourished skin.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>   </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Vital Tallow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Stripe.js -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+    <!-- Anime.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

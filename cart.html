@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Vital Tallow Natural Beef Tallow Lotion</title>
+    <meta name="description" content="Review your cart and checkout with our 100% natural beef tallow lotion products.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Vital Tallow</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="faq-benefits.html">FAQ & Benefits</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="faq-benefits.html">FAQ & Benefits</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Cart Page -->
+    <section class="section cart-page">
+        <div class="container">
+            <h1 class="text-center">Your Shopping Cart</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically populated by JavaScript -->
+                </div>
+                
+                <div class="order-summary cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span class="summary-subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span class="summary-shipping">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax:</span>
+                        <span class="summary-tax">$0.00</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Total:</span>
+                        <span class="summary-total-value">$0.00</span>
+                    </div>
+                    <a href="checkout.html" class="button checkout-btn">Proceed to Checkout</a>
+                    <p class="text-center"><i class="fas fa-lock"></i> Secure checkout</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">Pure Tallow</div>
+                <p>100% natural beef tallow lotion for healthy, nourished skin.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="product.html?size=2oz">2oz Lotion</a></li>
+                    <li><a href="product.html?size=4oz">4oz Lotion</a></li>
+                    <li><a href="product.html?size=8oz">8oz Lotion</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Learn</h4>
+                <ul class="footer-links">
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Pure Tallow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Anime.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

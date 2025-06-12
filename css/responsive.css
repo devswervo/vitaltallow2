@@ -1,0 +1,346 @@
+/* Responsive design styles for Vital Tallow website */
+
+/* Media Queries for Responsive Design */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .product-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .benefits-container, .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-gallery {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .order-summary {
+        margin-top: 30px;
+    }
+    
+    .benefits-container, .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .product-thumbnails {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .tabs .tab-headers {
+        flex-direction: column;
+    }
+    
+    .tabs .tab-header {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .payment-method-tabs {
+        flex-direction: column;
+    }
+    
+    .payment-tab {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .form-row .form-group {
+        width: 100%;
+    }
+    
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th, .comparison-table td {
+        padding: 8px;
+    }
+    
+    .benefits-container, .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .header-container {
+        padding: 10px;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .product-thumbnails {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .product-info h1 {
+        font-size: 1.5rem;
+    }
+    
+    .product-price {
+        font-size: 1.2rem;
+    }
+    
+    .size-options {
+        flex-wrap: wrap;
+    }
+    
+    .size-option {
+        margin-bottom: 10px;
+    }
+    
+    .cart-item {
+        grid-template-columns: 80px 1fr auto;
+        gap: 10px;
+    }
+    
+    .cart-item-image {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .cart-item-details h4 {
+        font-size: 0.9rem;
+    }
+    
+    .cart-item-details p {
+        font-size: 0.8rem;
+    }
+    
+    .cart-item-price {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table {
+        font-size: 0.8rem;
+    }
+    
+    .comparison-table th, .comparison-table td {
+        padding: 6px 4px;
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+        padding: 12px 10px;
+    }
+    
+    .faq-answer {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .footer-heading {
+        font-size: 1.1rem;
+    }
+    
+    .footer-links li a {
+        font-size: 0.9rem;
+    }
+    
+    .copyright p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Touch-specific improvements for mobile devices */
+@media (hover: none) {
+    /* Make buttons larger and more touch-friendly */
+    .button, 
+    .size-option, 
+    .quantity-btn, 
+    .tab-header, 
+    .payment-tab,
+    .faq-question {
+        min-height: 44px; /* Apple's recommended minimum touch target size */
+    }
+    
+    /* Increase spacing between interactive elements */
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    .footer-links li {
+        margin-bottom: 12px;
+    }
+    
+    /* Adjust hover states for touch devices */
+    .product-card:hover,
+    .benefit-card:hover,
+    .button:hover {
+        transform: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Ensure form elements are touch-friendly */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        font-size: 16px; /* Prevents iOS zoom on focus */
+        padding: 12px;
+    }
+    
+    /* Adjust checkbox size for touch */
+    input[type="checkbox"] {
+        transform: scale(1.2);
+        margin-right: 10px;
+    }
+}
+
+/* Print styles for order confirmation */
+@media print {
+    header, footer, .cta, .whats-next {
+        display: none;
+    }
+    
+    .confirmation-page {
+        padding: 0;
+    }
+    
+    .confirmation-icon, .confirmation-actions {
+        display: none;
+    }
+    
+    .order-details {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    body, .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 18pt;
+    }
+    
+    p, h2, h3 {
+        font-size: 12pt;
+    }
+}

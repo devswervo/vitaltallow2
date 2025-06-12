@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Vital Tallow Natural Beef Tallow Lotion</title>
+    <meta name="description" content="Shop our 100% natural beef tallow lotion in various sizes. Rich in vitamins A, D, E, and K and free from harmful chemicals.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Vital Tallow</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="faq-benefits.html">FAQ & Benefits</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="faq-benefits.html">FAQ & Benefits</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="section">
+        <div class="container product-container">
+            <div class="product-gallery fade-in">
+                <div class="product-main-image">
+                    <img src="images/tallow-lotion-main.jpg" alt="Vital Tallow Lotion in a glass jar" id="main-product-image">
+                </div>
+                <div class="product-thumbnails">
+                    <div class="product-thumbnail active" data-image="images/tallow-lotion-main.jpg">
+                        <img src="images/tallow-lotion-main.jpg" alt="Vital Tallow Lotion in a glass jar">
+                    </div>
+                    <div class="product-thumbnail" data-image="images/tallow-lotion-2oz.jpg">
+                        <img src="images/tallow-lotion-2oz.jpg" alt="2oz Vital Tallow Lotion">
+                    </div>
+                    <div class="product-thumbnail" data-image="images/tallow-lotion-4oz.jpg">
+                        <img src="images/tallow-lotion-4oz.jpg" alt="4oz Vital Tallow Lotion">
+                    </div>
+                    <div class="product-thumbnail" data-image="images/tallow-lotion-8oz.jpg">
+                        <img src="images/tallow-lotion-8oz.jpg" alt="8oz Vital Tallow Lotion">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info fade-in">
+                <h1>Vital Tallow Lotion</h1>
+                <p class="product-price">$24.99</p>
+                <div class="product-description">
+                    <p>Our 100% grass-fed beef tallow lotion is packed with vitamins A, D, E, and K — essential nutrients that nourish your skin from the outside in. Unlike commercial lotions filled with synthetic ingredients, our tallow lotion closely mimics your skin's natural oils for deep hydration without clogging pores.</p>
+                    <p>Free from parabens, phthalates, and synthetic fragrances, this all-natural lotion is gentle enough for sensitive skin and safe for all ages.</p>
+                    <ul>
+                        <li>100% grass-fed beef tallow</li>
+                        <li>Rich in vitamins A, D, E, and K</li>
+                        <li>No synthetic additives or preservatives</li>
+                        <li>Suitable for all skin types</li>
+                        <li>Fragrance-free (natural scent)</li>
+                    </ul>
+                </div>
+                <div class="product-options">
+                    <label class="option-label">Size:</label>
+                    <div class="size-options">
+                        <div class="size-option" data-size="2oz">2oz</div>
+                        <div class="size-option" data-size="4oz">4oz</div>
+                        <div class="size-option" data-size="8oz">8oz</div>
+                    </div>
+                    <label class="option-label">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn quantity-minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" max="99">
+                        <button class="quantity-btn quantity-plus">+</button>
+                    </div>
+                </div>
+                <button class="button add-to-cart-btn">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+                <div class="product-meta">
+                    <p><i class="fas fa-truck"></i> Free shipping on orders over $50</p>
+                    <p><i class="fas fa-undo"></i> 30-day satisfaction guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="section product-details">
+        <div class="container">
+            <div class="tabs fade-in">
+                <div class="tab-headers">
+                    <div class="tab-header active" data-tab="ingredients">Ingredients</div>
+                    <div class="tab-header" data-tab="benefits">Benefits</div>
+                    <div class="tab-header" data-tab="how-to-use">How to Use</div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-panel active" id="ingredients">
+                        <h3>Simple, Pure Ingredients</h3>
+                        <p>We believe in transparency and simplicity. Our tallow lotion contains only what your skin needs:</p>
+                        <ul>
+                            <li><strong>Grass-fed Beef Tallow:</strong> The main ingredient, rich in vitamins and nutrients that nourish your skin.</li>
+                            <li><strong>Organic Olive Oil:</strong> Adds smoothness and additional nutrients.</li>
+                            <li><strong>Essential Oils (Optional):</strong> For those who prefer a light, natural scent.</li>
+                        </ul>
+                        <p>That's it. No fillers, no preservatives, no synthetic additives.</p>
+                    </div>
+                    <div class="tab-panel" id="benefits">
+                        <h3>Why Tallow is Superior for Skin</h3>
+                        <p>Beef tallow has been used for centuries as a natural skin care solution, and for good reason:</p>
+                        <ul>
+                            <li><strong>Biocompatible:</strong> The fatty acid profile of tallow is remarkably similar to that of human skin, allowing it to absorb deeply and effectively.</li>
+                            <li><strong>Rich in Fat-Soluble Vitamins:</strong> Contains vitamins A, D, E, and K that support skin health and regeneration.</li>
+                            <li><strong>Anti-inflammatory:</strong> Helps calm irritated skin and may reduce redness and inflammation.</li>
+                            <li><strong>Deeply Moisturizing:</strong> Creates a protective barrier that locks in moisture without clogging pores.</li>
+                            <li><strong>Supports Skin Barrier:</strong> Helps maintain and repair your skin's natural protective barrier.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="how-to-use">
+                        <h3>Application Tips</h3>
+                        <p>For best results:</p>
+                        <ol>
+                            <li>Start with clean, slightly damp skin for better absorption.</li>
+                            <li>Take a small amount of tallow lotion and warm it between your palms.</li>
+                            <li>Apply to your skin using gentle, circular motions.</li>
+                            <li>Allow a few minutes for complete absorption.</li>
+                            <li>For extremely dry areas, apply a slightly thicker layer before bed.</li>
+                        </ol>
+                        <p>A little goes a long way! Our tallow lotion is concentrated and economical.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="section related-products">
+        <div class="container">
+            <h2 class="text-center">You May Also Like</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image" style="background-image: url('images/tallow-balm.jpg');"></div>
+                    <div class="product-details">
+                        <h3 class="product-title">Pure Tallow Balm</h3>
+                        <p>A thicker consistency for targeted dry areas and intensive treatment.</p>
+                        <p class="product-price">$19.99</p>
+                        <a href="#" class="button">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image" style="background-image: url('images/tallow-soap.jpg');"></div>
+                    <div class="product-details">
+                        <h3 class="product-title">Tallow Soap Bar</h3>
+                        <p>Gentle cleansing with the same nourishing benefits of our tallow.</p>
+                        <p class="product-price">$9.99</p>
+                        <a href="#" class="button">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image" style="background-image: url('images/tallow-gift-set.jpg');"></div>
+                    <div class="product-details">
+                        <h3 class="product-title">Tallow Gift Set</h3>
+                        <p>Perfect introduction to tallow skincare with lotion, balm, and soap.</p>
+                        <p class="product-price">$39.99</p>
+                        <a href="#" class="button">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+            <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">Vital Tallow</div>
+                <p>100% natural beef tallow lotion for healthy, nourished skin.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div></div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Vital Tallow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Anime.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
